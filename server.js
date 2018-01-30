@@ -17,7 +17,7 @@ var port = process.env.API_PORT || 3001;
 //db config -- REPLACE USERNAME/PASSWORD/DATABASE WITH YOUR OWN FROM MLAB!
 //mongodb://localhost:27017/MyDb
 //var mongoDB = 'mongodb://<DBUSERNAME>:<DBPASSWORD>@ds019836.mlab.com:19836/bryandb';
-var mongoDB = 'mongodb://localhost:27017/DB';
+var mongoDB = 'mongodb://localhost:27017/myDB';
 mongoose.connect(mongoDB, { useMongoClient: true })
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
